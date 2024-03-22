@@ -3,7 +3,11 @@ Run with `cargo bench`.
 Result on i9-9900K (3.60 GHz) + 32GB RAM
 
 ```
-decode qoi              time:   [2.5383 ms 2.5778 ms 2.6224 ms]
-decode jpg              time:   [937.85 µs 953.64 µs 972.37 µs]
-decode png              time:   [926.37 µs 949.98 µs 973.97 µs]
+encode qoi              time:   [5.8880 ms 5.9623 ms 6.0478 ms]
+encode jpeg             time:   [3.3849 ms 3.4074 ms 3.4323 ms]
+encode png              time:   [2.7700 ms 2.8185 ms 2.8748 ms]
+
+decode qoi              time:   [2.0618 ms 2.0755 ms 2.0910 ms]
+decode jpeg             time:   [937.84 µs 946.73 µs 956.73 µs]
+decode png              time:   [828.25 µs 839.40 µs 850.99 µs]
 ```

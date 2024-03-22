@@ -1,5 +1,5 @@
 [package]
-name = "zune-image-decode-benchmark"
+name = "zune-image-codec-benchmark"
 version = "0.1.0"
 edition = "2021"
 
@@ -9,5 +9,5 @@ zune-image = { version = "0.4.15" }
 criterion = { version = "0.4" }
 
 [[bench]]
-name = "zune_image_decode_benchmark"
+name = "zune_image_codec_benchmark"
 harness = false
