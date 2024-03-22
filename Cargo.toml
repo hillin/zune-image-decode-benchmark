@@ -1,0 +1,13 @@
+[package]
+name = "zune-image-decode-benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zune-core = "0.4.12"
+zune-image = { version = "0.4.15" }
+criterion = { version = "0.4" }
+
+[[bench]]
+name = "zune_image_decode_benchmark"
+harness = false
