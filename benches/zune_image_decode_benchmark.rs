@@ -14,7 +14,7 @@ fn benchmark_decode_qoi(c: &mut Criterion) {
         .write_to_vec(zune_image::codecs::ImageFormat::QOI)
         .unwrap();
 
-    c.bench_function("image-rs decode qoi", |b| {
+    c.bench_function("decode qoi", |b| {
         b.iter(|| {
             let _ = Image::read(&data, DecoderOptions::default()).unwrap();
         })
@@ -27,7 +27,7 @@ fn benchmark_decode_jpeg(c: &mut Criterion) {
         .write_to_vec(zune_image::codecs::ImageFormat::JPEG)
         .unwrap();
 
-    c.bench_function("image-rs decode jpg", |b| {
+    c.bench_function("decode jpg", |b| {
         b.iter(|| {
             let _ = Image::read(&data, DecoderOptions::default()).unwrap();
         })
@@ -40,7 +40,7 @@ fn benchmark_decode_png(c: &mut Criterion) {
         .write_to_vec(zune_image::codecs::ImageFormat::PNG)
         .unwrap();
 
-    c.bench_function("image-rs decode png", |b| {
+    c.bench_function("decode png", |b| {
         b.iter(|| {
             let _ = Image::read(&data, DecoderOptions::default()).unwrap();
         })
